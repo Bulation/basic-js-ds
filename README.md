@@ -2,6 +2,33 @@
 
 ⚠️ DO NOT SUBMIT PULL REQUESTS TO THIS REPO ⚠️
 
+---
+
+#### Prerequisites
+1. Install [Node.js](https://nodejs.org/en/download/)   
+2. Fork this repository: https://github.com/AlreadyBored/basic-js-ds
+3. Clone your newly created repo: https://github.com/<%your_github_username%>/basic-js-ds  
+4. Go to folder `basic-js-ds`  
+5. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)  
+6. Run `npm run test` in command line.
+7. You will see the number of pending, passing and failing tests. 100% of passing tests is equal to max score for the task
+
+---
+
+#### Submit to [rs app](https://app.rs.school)
+1. Open [rs app](https://app.rs.school) and login
+2. Go to submit task page
+3. Select your task (BasicJS Data Structures)
+4. Press the submit button and enjoy
+
+---
+
+#### Notes
+1. We recommend you to use Node.js of version 14.x.x LTS. If you use any of features, that does not supported by Node.js v14, there may be problems with task submit.
+2. Please, be sure that each of your tests is limited to 30 sec.
+
+---
+
 ## General task description
 Your task is to deal with some data structures to solve the subtasks. Subtasks descriptions, as well as instructions on how to run tests and submit solutions are below.
 
@@ -55,7 +82,7 @@ Write your code in `src/binary-search-tree.js`.
 ---
 
 
-### **(ST) Remove from list**
+### **Remove from list**
 Given a **singly linked list** of integers `l` and an integer `k`, remove all elements from list `l` that have a value equal to `k`.
 
 For example, for `l` = `[3, 1, 2, 3, 4, 5]` and `k` = `3`,
@@ -64,17 +91,19 @@ the output should be `[1, 2, 4, 5]`
 **Singly linked lists** are already defined with this interface
 
 ```js
-function ListNode(x) {
-  this.value = x;
-  this.next = null;
+class ListNode {
+  constructor(x) {
+    this.value = x;
+    this.next = null;
+  }
 }
 ```
 
-Write your code in `src/st-remove-from-list.js`.
+Write your code in `src/remove-from-list.js`.
 
 ---
 
-### **(ST) Stack**
+### **Stack**
 Implement the **Stack** with a given interface via **array**.
 
 For example:
@@ -88,11 +117,11 @@ stack.pop(); // returns the top element from stack and deletes it, returns 1
 stack.pop(); // undefined
 ```
 
-Write your code in `src/st-stack.js`.
+Write your code in `src/stack.js`.
 
 ---
 
-### **(ST) Queue**
+### **Queue**
 Implement the **Queue** with a given interface via **linked list** (use `ListNode` extension).
 Each instance of queue must have 3 methods:
     * `enqueue(value)` — puts the `value` at the end of the **queue** 
@@ -111,36 +140,17 @@ queue.getUnderlyingList() // returns { value: 3, next: null }
 
 ```
 
-Write your code in `src/st-queue.js`.
-
----
-
-#### Prerequisites
-1. Install [Node.js](https://nodejs.org/en/download/)   
-2. Fork this repository: https://github.com/AlreadyBored/basic-js-ds
-3. Clone your newly created repo: https://github.com/<%your_github_username%>/basic-js-ds  
-4. Go to folder `basic-js-ds`  
-5. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)  
-6. Run `npm run test` in command line.
-7. You will see the number of pending, passing and failing tests. 100% of passing tests is equal to max score for the task
-
----
-
-#### Submit to [rs app](https://app.rs.school)
-1. Open [rs app](https://app.rs.school) and login
-2. Go to submit task page
-3. Select your task (BasicJS Data Structures)
-4. Press the submit button and enjoy
-
----
-
-#### Notes
-1. We recommend you to use Node.js of version 12.x.x LTS. If you use any of features, that does not supported by Node.js v12, there may be problems with task submit.
-2. Please, be sure that each of your tests is limited to 30 sec.
+Write your code in `src/queue.js`.
 
 ---
 
 © [AlreadyBored](https://github.com/alreadybored)  
-& tasks with prefix `st-` are integrated from [Short track 2021 repo](https://github.com/rkhaslarov/rs-school-short-track-2021)
+
+& tasks:
+* Remove from list
+* Stack
+* Queue
+
+are integrated from [Short track 2021 repo](https://github.com/rkhaslarov/rs-school-short-track-2021)
 
 & Thanks [mikhama](https://github.com/mikhama) for assistance!
